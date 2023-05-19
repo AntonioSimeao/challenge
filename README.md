@@ -1,4 +1,4 @@
-## Sobre o proejto
+## Sobre o projeto
 
 Projeto criado para um desafio proposto no processo seletivo de uma empresa, onde consistia na criação de uma API Restful NestJS e banco de dados MongoDB para fazer downloads de imagens de uma url pública e salva-la no sistema e gerar uma versão reduzida, se necessário, de acordo com o tamanho da imagem. Além disso salvar também todos os metadados contidos no exif da imagem original.
 
