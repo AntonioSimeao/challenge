@@ -83,9 +83,17 @@ export class ImagesController {
       // Fechar o ExifTool
       await exiftool.end();
 
+      const responseMessage = {
+        localpath: {
+          original: imagePath,
+          thumb: thumbnailPath,
+        },
+        metadata: JSON.stringify(metadata),
+      };
+
       return {
         message: 'Imagem baixada com sucesso!',
-        thumbnailDimensions,
+        data: responseMessage,
       };
     } catch (error) {
       console.log(error);

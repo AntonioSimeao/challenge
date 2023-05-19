@@ -25,6 +25,9 @@ export class ImageMetadata {
 
   @Prop()
   modifiedDate: Date;
+
+  @Prop()
+  metadata: string; 
 }
 
 export const ImageMetadataSchema = SchemaFactory.createForClass(ImageMetadata);
