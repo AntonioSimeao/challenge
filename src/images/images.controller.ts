@@ -6,7 +6,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import axios from 'axios';
-import { statSync } from 'fs';
+import { statSync, mkdirSync, existsSync } from 'fs';
 const sharp = require('sharp');
 const { ExifTool } = require('exiftool-vendored');
 import { InjectModel } from '@nestjs/mongoose';
@@ -36,6 +36,12 @@ export class ImagesController {
       const imageId = uuidv4();
       const imageBuffer = Buffer.from(response.data, 'binary');
       const imagesDir = path.join(__dirname, '..', '..', 'Downloadedimages');
+
+      // Verificar se a pasta "Downloadedimages" existe, caso contrário, criar
+      if (!existsSync(imagesDir)) {
+        mkdirSync(imagesDir, { recursive: true });
+      }
+
       const imagePath = path.join(imagesDir, `${imageId}.jpg`);
       const thumbnailPath = path.join(imagesDir, `${imageId}_thumb.jpg`);
 
