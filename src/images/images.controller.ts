@@ -27,10 +27,10 @@ export class ImagesController {
   ) {}
 
   @Post('/save')
-  async downloadImage(@Body() body: { imageUrl: string; compress: number }) {
+  async downloadImage(@Body() body: { image: string; compress: number }) {
     try {
-      const imageUrl = body.imageUrl.split('?')[0];
-      const response = await axios.get(imageUrl, {
+      const image = body.image.split('?')[0];
+      const response = await axios.get(image, {
         responseType: 'arraybuffer',
       });
       const imageId = uuidv4();

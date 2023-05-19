@@ -23,19 +23,6 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
 ## Banco de dados
 
 Utilizei o banco de dados mongodb localhost na porta 27017
@@ -43,6 +30,25 @@ Utilizei o banco de dados mongodb localhost na porta 27017
 ```bash
 # url
 mongodb://localhost:27017
+```
 
+## Baixando a iamgem
+
+Para baixar a imagem pode ser utilizado um API client como o Imsomnia ou o Postman com o localhost na porta 3000 para /image/save.
+Aqui está um exemplo de como deve ser a url no Postman ou Imsmonia:
+
+```bash
+# URL
+http://localhost:3000/image/save
+```
+
+Aqui está um exemplo de como deve ser o objeto JSON:
+
+```bash
+# JSON
+{
+    "image": "https://assets.storage.trakto.io/AkpvCuxXGMf3npYXajyEZ8A2APn2/0e406885-9d03-4c72-bd92-c6411fbe5c49.jpeg",
+    "compress": 0.9
+}
 
 ```
