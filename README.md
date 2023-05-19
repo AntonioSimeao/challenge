@@ -2,8 +2,6 @@
 
 Projeto criado para um desafio proposto no processo seletivo de uma empresa, onde consistia na criação de uma API Restful NestJS e banco de dados MongoDB para fazer downloads de imagens de uma url pública e salva-la no sistema e gerar uma versão reduzida, se necessário, de acordo com o tamanho da imagem. Além disso salvar também todos os metadados contidos no exif da imagem original.
 
-
-
 ## Instalação
 
 Execute o comando abaxio para instalar todas as dependências do projeto.
@@ -12,7 +10,7 @@ Execute o comando abaxio para instalar todas as dependências do projeto.
 $ npm install
 ```
 
-## Running the app
+## Iniciando o projeto
 
 ```bash
 # development
@@ -38,6 +36,13 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Banco de dados
+
+Utilizei o banco de dados mongodb localhost na porta 27017
+
+```bash
+# url
+mongodb://localhost:27017
 
 
-
+```
