@@ -51,3 +51,8 @@ Aqui está um exemplo de como deve ser o objeto JSON:
     "compress": 0.9
 }
 ```
+## Imagens salvas
+As imagens serão salvar em uma pasta com o nome Downloadedimages, tanto a original quanto a _thumb.
+
+
+
