@@ -35,13 +35,7 @@ export class ImagesController {
       });
       const imageId = uuidv4();
       const imageBuffer = Buffer.from(response.data, 'binary');
-      const imagesDir = path.join(
-        __dirname,
-        '..',
-        '..',
-        'public',
-        'Downloadedimages',
-      );
+      const imagesDir = path.join(__dirname, '..', '..', 'Downloadedimages');
       const imagePath = path.join(imagesDir, `${imageId}.jpg`);
       const thumbnailPath = path.join(imagesDir, `${imageId}_thumb.jpg`);
 
