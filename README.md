@@ -1,4 +1,8 @@
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Sobre o proejto
+
+Projeto criado para um desafio proposto no processo seletivo da empresa Trakto, onde consistia na criação de uma API Restful NestJS e banco de dados MongoDB para fazer downloads de imagens de uma url pública e salva-la no sistema e gerar uma versão reduzida, se necessário, de acordo com o tamanho da imagem. Além disso salvar também todos os metadados contidos no exif da imagem original.
+
+
 
 ## Instalação
 
@@ -34,16 +38,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).

@@ -19,14 +19,14 @@ import {
   ImageMetadataDocument,
 } from './schemas/image-metadata.schema';
 
-@Controller('images')
+@Controller('image')
 export class ImagesController {
   constructor(
     @InjectModel(ImageMetadata.name)
     private imageMetadataModel: Model<ImageMetadataDocument>,
   ) {}
 
-  @Post()
+  @Post('/save')
   async downloadImage(@Body() body: { imageUrl: string; compress: number }) {
     try {
       const imageUrl = body.imageUrl.split('?')[0];
