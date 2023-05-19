@@ -50,5 +50,4 @@ Aqui está um exemplo de como deve ser o objeto JSON:
     "image": "https://assets.storage.trakto.io/AkpvCuxXGMf3npYXajyEZ8A2APn2/0e406885-9d03-4c72-bd92-c6411fbe5c49.jpeg",
     "compress": 0.9
 }
-
 ```
