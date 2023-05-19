@@ -32,7 +32,7 @@ Utilizei o banco de dados mongodb localhost na porta 27017
 mongodb://localhost:27017
 ```
 
-## Baixando a iamgem
+## Baixando a imagem
 
 Para baixar a imagem pode ser utilizado um API client como o Imsomnia ou o Postman com o localhost na porta 3000 para /image/save.
 Aqui está um exemplo de como deve ser a url no Postman ou Imsmonia:
