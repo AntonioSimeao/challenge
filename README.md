@@ -52,7 +52,7 @@ Aqui está um exemplo de como deve ser o objeto JSON:
 }
 ```
 ## Imagens salvas
-As imagens serão salvar em uma pasta com o nome Downloadedimages, tanto a original quanto a _thumb.
+As imagens serão salvas em uma pasta com o nome Downloadedimages, tanto a original quanto a _thumb.
 
 
 
